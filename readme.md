@@ -1,6 +1,6 @@
 # GETTING STARTED WITH DSPshaala
 
-![DSPshaala](images\front.jpeg)
+![DSPshaala](images/front.jpeg)
 
 ## INTRODUCTION
 
