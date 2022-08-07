@@ -57,7 +57,7 @@ For manual installation of driver, follow the following steps:
 
 The executable application currently supported on Windows OS can be downloaded with the repo.
 <img align="center" src="images/app-interface.png"> 
-![DSPshaala](images/app-interface.png)
+
 
 1. **Serial Connection** – Setup the Serial connection with the python application with the controller to send various test-related information from Python Application. The input and output data from the algorithm from the controller are also provided by the controller through this serial connection.
 Clicking the Connect To Controller would connect to an available device and clicking on Close Connection would close an existing connection.
