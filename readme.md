@@ -56,7 +56,7 @@ For manual installation of driver, follow the following steps:
 ### APP USAGE
 
 The executable application currently supported on Windows OS can be downloaded with the repo.
-
+<img align="center" src="images/app-interface.png"> 
 ![DSPshaala](images/app-interface.png)
 
 1. **Serial Connection** – Setup the Serial connection with the python application with the controller to send various test-related information from Python Application. The input and output data from the algorithm from the controller are also provided by the controller through this serial connection.
@@ -78,7 +78,6 @@ Next is the selection of the cut-off frequency of the passbands and stopbands of
 ![DSPshaala](images/iir-filter-2.png)
 
 5. **Convolution Algorithm** - Convolution is a process that takes in 2 data arrays and performs the algorithm resulting in another data array. Click on the Convolution option to enter the convolution setup page. There are mainly 3 setup options in the algorithm. First is the sampling frequency which can be selected with the Sampling Frequency option same way as explained previously. Next is the selection of no of signal to be convolved which can be selected from the No of Signals drop-down which has values 1 or 2. However, we always need 2 signals for this algorithm but selecting 1 would self-convolve the signal with itself. The last option is the selection of the size of array required for convolution which can be selected through the Size of the Input Array option having a slider and value-box combination same as that of sampling frequency but limited to a max size of 256. After the selection of these parameters clicking on the Start Convolution option would send the setup option to the controller in presence of a connected device and it would start the convolution process. The input data arrays and output convolved data from the controller can be plotted in the time domain and frequency domain by clicking the Input/Output Signal In Time Domain and FFT Of Input/Output Signal respectively.
-
 
 
 6. **FFT Algorithm** - Fast Fourier Transform is an algorithm that takes any data array and provides an insight into the frequency components present in the data array. Click on the Fast Fourier Transform Algorithm option to enter the fft setup page.
