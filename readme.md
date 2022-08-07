@@ -56,7 +56,9 @@ For manual installation of driver, follow the following steps:
 ### APP USAGE
 
 The executable application currently supported on Windows OS can be downloaded with the repo.
-<img align="center" src="images/app-interface.png"> 
+<<p align="center" width="100%">
+    <img  src="images/app-interface.png"> 
+</p>
 
 
 1. **Serial Connection** – Setup the Serial connection with the python application with the controller to send various test-related information from Python Application. The input and output data from the algorithm from the controller are also provided by the controller through this serial connection.
