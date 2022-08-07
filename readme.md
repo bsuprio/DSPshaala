@@ -19,6 +19,40 @@
 2. The python application apart from taking inputs for the parameters and sending that information to the controller can also plot input and output data points from the algorithm, eliminating the need for a digital storage oscilloscope (DSO).
 3. The application developed has tried to cover all the basic fundamental DSP algorithms like the digital filters, convolution and FFT etc., under the same umbrella with separate modules that include the generation of signals.
 
+### SETTING UP ARDUINO IDE(FOR ESP32) 
+
+#### Downloading and Installing Arduino IDE
+
+In order to download the Arduino IDE, [visit this link](https://www.arduino.cc/en/software), download and run the installation.
+
+#### Installing ESP32 add-ons for Arduino IDE
+
+In the Arduino IDE, go to File –> Preferences
+Enter https://dl.espressif.com/dl/package_esp32_index.json into the “Additional Board Manager URLs” field.
+Go to Tools –> Board –> Boards Manager. In the dialog box, that opens up, search for ESP32, and press install button for the “ESP32 by Espressif Systems version 1.0.3“.
+**Use only 1.0.3 version to flash the code.**
+Now, go to Tools –> Board. Now, select the ESP32 DEV Module.
+
+#### Installing CP210x USB to UART Bridge VCP Drivers and Testing
+
+For manual installation of driver, follow the following steps:
+
+1. Download and install the driver from this link -> [Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+
+2. Once the driver is installed, connect the board with the laptop using micro-USB cable.
+
+3. Next open the Device Manager, you can search for it in the Windows search box. You should see something similar in Device Manager if drivers are installed properly.
+
+![DSPshaala](images/device-manager.jpeg)
+
+4. After this you can flash Blink program(File -> Examples -> Basics -> Blink) from Arduino IDE to test everything is working fine. To upload the code you need to select "ESP32 Dev Module" from Tools -> Board -> ESP32 Arduino. 
+
+5. Then select COM port from "Tools -> Port -> *your COM port*
+
+6. Then click on upload button and hold "BOOT" button on ESP32. Release the button as you see "Connecting.." message in the Arduino IDE. After that, you should see the “Done uploading” message.
+
+7. If everything is working fine upto this, you can flash the DSPshaala code given in the repo.
+
 ### APP USAGE
 
 The executable application currently supported on Windows OS can be downloaded with the repo.
