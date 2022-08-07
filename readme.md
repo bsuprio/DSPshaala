@@ -76,9 +76,10 @@ Next is the selection of the cut-off frequency of the passbands and stopbands of
 </p>
 
 4. **IIR Filter Implementation** - A infinite impulse response (IIR) filter can be designed and visualised from this part of the project. Click on the IIR Filter Setup option to enter the IIR filter page. Most of the options are similar to that of the FIR filter set up and follows the same rules and guidelines. One major difference the IIR filter setup has got the selection of the type of IIR Filter type which has the options as Butterworth, Chebyshev 1, Chebyshev 2 and Elliptical. Required IIR filter type can be chosen from the drop-down menu of IIR Filter Type. The rest of the functionality is similar to that of its FIR counterpart page menu.
-
-![DSPshaala](images/iir-filter.png)
-![DSPshaala](images/iir-filter-2.png)
+<p align="center" width="100%">
+    <img width="40%" src="images/iir-filter.png"> 
+    <img width="55%" src="images/iir-filter-2.png"> 
+</p>
 
 5. **Convolution Algorithm** - Convolution is a process that takes in 2 data arrays and performs the algorithm resulting in another data array. Click on the Convolution option to enter the convolution setup page. There are mainly 3 setup options in the algorithm. First is the sampling frequency which can be selected with the Sampling Frequency option same way as explained previously. Next is the selection of no of signal to be convolved which can be selected from the No of Signals drop-down which has values 1 or 2. However, we always need 2 signals for this algorithm but selecting 1 would self-convolve the signal with itself. The last option is the selection of the size of array required for convolution which can be selected through the Size of the Input Array option having a slider and value-box combination same as that of sampling frequency but limited to a max size of 256. After the selection of these parameters clicking on the Start Convolution option would send the setup option to the controller in presence of a connected device and it would start the convolution process. The input data arrays and output convolved data from the controller can be plotted in the time domain and frequency domain by clicking the Input/Output Signal In Time Domain and FFT Of Input/Output Signal respectively.
 
@@ -93,8 +94,9 @@ There are 2 setup options to be selected for this algorithm, the sampling freque
 ![DSPshaala](images/iir-notch.png)
 
 8.	**DTMF Generation And Decoding** – DTMF stands for Dual Tone Multi-Frequency and in this, we have a set of buttons that can be decoded with the help of the sound. Click on the DTMF Generation And Decoding to enter the DTMF page. Here every clicking of every button produces a sound which has a mix of 2 sine frequency each from one of rows and one of the columns list of frequencies. The sound produced can be used to decode the frequency with the help of the Goertzel Algorithm. Every button produces a limited sound output on the laptop speaker. Clicking on Start Decoding would start the decoding on the controller and the decoded information can be displayed. 
-
-![DSPshaala](images/dtmf.png)
+<<p align="center" width="100%">
+    <img  width="50%" src="images/dtmf.png"> 
+</p>
 
 9. **Signal Generator Through Python** - This is the last part of this application and it helps the user to generate different wave to provide input to the filter or other application. The signal is output on the laptop speaker or an aux cable can be connected to provide it to the controller. Click on the Signal Generator Through Python option to enter this page. There are a few options that have to be selected to generate the appropriate signal. First is the sampling frequency that can be selected from the Sampling Speed option having a maximum value of 100,000. Next is the selection of the time for which the sound/signal is produced and can be selected from the Time Period option having a maximum value of 20 sec. After that, 4 different separate signals can be enabled together. Every signal has its type that has options Sine, Square, Triangular, Sawtooth and Random which should be selected. Next is the selection of the required frequency of the signal which should be selected. If the Random type of signal is chosen then it didn’t require the selection of the frequency. Lastly for enabling signals each individual enabled button must be selected. Only the enabled signals would be selected for generating the output.
 After selecting all the necessary options clicking on Set Output would play the output on the speaker. If the user wants to check the time domain and frequency response of the generated signal then the option Plot FFT Output can be clicked. Lastly is the generated signal have to be stopped while it is being played then the Stop Output options is to be clicked.
