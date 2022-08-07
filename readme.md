@@ -60,22 +60,22 @@ The input signal for processing can be received by the board from AUX connector 
 You can select the input source on board using the shorting jumpers as shown in the figure below.
 
 <p align="center" width="100%">
-    <img  width="70%" src="images/adjustment.jpeg"> 
+    <img  width="50%" src="images/adjustment.jpeg"> 
 </p>
 
 The figure highlights the current setting on the **AUX** connector and also highlights the instructions on the board to select one. There is a support to give AUX and Microphone input to IO33 and IO32 ADC pins of the ESP32. By default only IO33 has been set in the code provided, which can be modified as per the use case.  
 Also, two presets are given on the board to adjust the gain of the Microphone and AUX input. If you find your input signal clipped or too weak, you can adjust the gains by the presets, as highlighted in the figure below.
 <p align="center" width="100%">
-    <img  width="70%" src="images/gain.jpeg"> 
+    <img  width="50%" src="images/gain.jpeg"> 
 </p>
 
 To give Sine/Square waves to the board as audio signal, you can use Frequency Generator app from Play Store on the smart phone.
 <p align="center" width="100%">
-    <img  width="80%" src="images/app3.jpeg"> 
+    <img  width="50%" src="images/app3.jpeg"> 
 </p>
 <p align="center" width="100%">
-    <img  width="40%" src="images/app1.jpeg"> 
-    <img width="40%" src="images/app2.jpeg"> 
+    <img  width="25%" src="images/app1.jpeg"> 
+    <img width="25%" src="images/app2.jpeg"> 
 </p>
 
 ## APP USAGE
