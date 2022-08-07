@@ -42,8 +42,9 @@ For manual installation of driver, follow the following steps:
 2. Once the driver is installed, connect the board with the laptop using micro-USB cable.
 
 3. Next open the Device Manager, you can search for it in the Windows search box. You should see something similar in Device Manager if drivers are installed properly.
-
-![DSPshaala](images/device-manager.jpeg)
+<<p align="center" width="100%">
+    <img  width="70%" src="images/device-manager.jpeg"> 
+</p>
 
 4. After this you can flash Blink program(File -> Examples -> Basics -> Blink) from Arduino IDE to test everything is working fine. To upload the code you need to select "ESP32 Dev Module" from Tools -> Board -> ESP32 Arduino. 
 
@@ -96,7 +97,7 @@ There are 2 setup options to be selected for this algorithm, the sampling freque
 8.	**DTMF Generation And Decoding** – DTMF stands for Dual Tone Multi-Frequency and in this, we have a set of buttons that can be decoded with the help of the sound. Click on the DTMF Generation And Decoding to enter the DTMF page. Here every clicking of every button produces a sound which has a mix of 2 sine frequency each from one of rows and one of the columns list of frequencies. The sound produced can be used to decode the frequency with the help of the Goertzel Algorithm. Every button produces a limited sound output on the laptop speaker. Clicking on Start Decoding would start the decoding on the controller and the decoded information can be displayed. 
 <<p align="center" width="100%">
     <img  width="50%" src="images/dtmf.png"> 
-</p>
+</p>`
 
 9. **Signal Generator Through Python** - This is the last part of this application and it helps the user to generate different wave to provide input to the filter or other application. The signal is output on the laptop speaker or an aux cable can be connected to provide it to the controller. Click on the Signal Generator Through Python option to enter this page. There are a few options that have to be selected to generate the appropriate signal. First is the sampling frequency that can be selected from the Sampling Speed option having a maximum value of 100,000. Next is the selection of the time for which the sound/signal is produced and can be selected from the Time Period option having a maximum value of 20 sec. After that, 4 different separate signals can be enabled together. Every signal has its type that has options Sine, Square, Triangular, Sawtooth and Random which should be selected. Next is the selection of the required frequency of the signal which should be selected. If the Random type of signal is chosen then it didn’t require the selection of the frequency. Lastly for enabling signals each individual enabled button must be selected. Only the enabled signals would be selected for generating the output.
 After selecting all the necessary options clicking on Set Output would play the output on the speaker. If the user wants to check the time domain and frequency response of the generated signal then the option Plot FFT Output can be clicked. Lastly is the generated signal have to be stopped while it is being played then the Stop Output options is to be clicked.
