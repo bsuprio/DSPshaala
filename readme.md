@@ -49,7 +49,7 @@ For manual installation of driver, follow the following steps:
 
 5. Then select COM port from "Tools -> Port -> *your COM port*
 
-6. Then click on upload button and hold "BOOT" button on ESP32. Release the button as you see "Connecting.." message in the Arduino IDE. After that, you should see the “Done uploading” message.
+6. Then click on upload button and hold "**BOOT**" button on ESP32. Release the button as you see "**Connecting..**" message in the Arduino IDE. After that, you should see the “**Done uploading**” message.
 
 7. If everything is working fine upto this, you can flash the DSPshaala code given in the repo.
 
@@ -79,12 +79,12 @@ Next is the selection of the cut-off frequency of the passbands and stopbands of
 
 5. **Convolution Algorithm** - Convolution is a process that takes in 2 data arrays and performs the algorithm resulting in another data array. Click on the Convolution option to enter the convolution setup page. There are mainly 3 setup options in the algorithm. First is the sampling frequency which can be selected with the Sampling Frequency option same way as explained previously. Next is the selection of no of signal to be convolved which can be selected from the No of Signals drop-down which has values 1 or 2. However, we always need 2 signals for this algorithm but selecting 1 would self-convolve the signal with itself. The last option is the selection of the size of array required for convolution which can be selected through the Size of the Input Array option having a slider and value-box combination same as that of sampling frequency but limited to a max size of 256. After the selection of these parameters clicking on the Start Convolution option would send the setup option to the controller in presence of a connected device and it would start the convolution process. The input data arrays and output convolved data from the controller can be plotted in the time domain and frequency domain by clicking the Input/Output Signal In Time Domain and FFT Of Input/Output Signal respectively.
 
-![DSPshaala](images/convolution.png)
+
 
 6. **FFT Algorithm** - Fast Fourier Transform is an algorithm that takes any data array and provides an insight into the frequency components present in the data array. Click on the Fast Fourier Transform Algorithm option to enter the fft setup page.
 There are 2 setup options to be selected for this algorithm, the sampling frequency and the size of the input array which can be selected from the Sampling Frequency and Size of Input Array options. Clicking on Start FFT would send these setup parameters to the comptroller and it would start the fft algorithm. The output of the fft algorithm can be plotted by clicking Plot FFT of Signal Button. 
 
-![DSPshaala](images/fft-algo.png)
+
 
 7. **IIR Notch Filter** - IIR Notch filter is a 2nd order IIR filter that can eliminate a small band of frequency from any signal. Click on the IIR Notch Filter option to enter the notch filter setup page. The sampling frequency has to be selected from the Sampling Frequency option. Next, a single cut-off frequency has to be selected from the Cut-off Frequency option which has a max value of half the value that was selected sampling frequency according to the Nyquist Rate. This setup has an additional setup option known as the steepness value which accounts for how narrow would be the stopband of the filter. Its value ranges from 0.8 to 0.999(just less than 1) and can be selected from the Value of a(Steepness) option. The rest all the buttons function the same way as they did in the FIR or IIR filter setup.
 
@@ -98,3 +98,7 @@ There are 2 setup options to be selected for this algorithm, the sampling freque
 After selecting all the necessary options clicking on Set Output would play the output on the speaker. If the user wants to check the time domain and frequency response of the generated signal then the option Plot FFT Output can be clicked. Lastly is the generated signal have to be stopped while it is being played then the Stop Output options is to be clicked.
 
 ![DSPshaala](images/sig-gen.png)
+
+## REFERENCES
+
+1. [Installing the ESP32 Board in Arduino IDE - Random Nerd Tutorials](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
